@@ -910,6 +910,7 @@ footer {
   body.projet {
     overflow: auto;
     height: auto;
+    padding-top: 70px;
   }
 
   .project-container {
@@ -930,7 +931,6 @@ footer {
     overflow: visible;
     padding-right: 0;
   }
-
 
   
 }
