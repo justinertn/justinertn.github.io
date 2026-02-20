@@ -149,21 +149,17 @@ const updateHeader = () => {
   showIfTop();
 })();
 
-  // ------------------------
-  // Scroll listener unique
-  // ------------------------
-  window.addEventListener(
-    "scroll",
-    () => {
-      updateHeader();
-      onParallaxScroll();
-    },
-    { passive: true }
-  );
-
-  // init
-  updateHeader();
-  onParallaxScroll();
+// ------------------------
+// Scroll listener unique
+// ------------------------
+window.addEventListener(
+  "scroll",
+  () => {
+    updateHeader();
+    onParallaxScroll();
+  },
+  { passive: true }
+);
 });
 
 // ------------------------
