@@ -844,9 +844,7 @@ footer {
     padding: 0 15px;
     
   }
-    .hero-text br{
-    display: none;   /* 🔥 enlève les retours forcés sur mobile */
-  }
+
 
   /* FLÈCHE (en bas) */
   .hero-arrow{
