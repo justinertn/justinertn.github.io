@@ -868,9 +868,7 @@ footer {
   }
 
   /* si tu gardes les <br>, ils cassent la mise en page */
-  .hero-video .hero-text br{
-    display: none;
-  }
+
 
   #projets{
     scroll-margin-top: 70px;
@@ -908,6 +906,9 @@ footer {
   .a-propos-content {
     flex-direction: column;
   }
+  .a-propos-text br{
+  display: none;
+}
 
   body.projet {
     overflow: auto;
