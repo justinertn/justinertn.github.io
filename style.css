@@ -792,7 +792,7 @@ footer {
   /* HERO */
 .hero-video{
   min-height: 100vh;              /* prend exactement la hauteur écran */
-  padding: 80px 20px 20px;        /* moins d’espace en haut/bas */
+  padding: 20px 20px 20px;        /* moins d’espace en haut/bas */
   display: flex;
   align-items: center;
   justify-content: center;
