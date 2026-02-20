@@ -910,9 +910,9 @@ footer {
   .a-propos-content {
     flex-direction: column;
   }
-  .a-propos-text br{
+  .a-propos-text .no-br br{
   display: none;
-}
+  }
 
   body.projet {
     overflow: auto;
