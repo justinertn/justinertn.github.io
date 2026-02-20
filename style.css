@@ -790,18 +790,20 @@ footer {
   }
 
   /* HERO */
-  .hero-video{
-    display: block;
-    padding: 90px 20px 40px;
-    min-height: auto;
-  }
+.hero-video{
+  min-height: 100vh;              /* prend exactement la hauteur écran */
+  padding: 80px 20px 20px;        /* moins d’espace en haut/bas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   /* container mobile */
   .hero-inner{
     display: flex;
     flex-direction: column;
     align-items: center;   /* vidéo centrée */
-    gap: 26px;
+    gap: 20px;
 
     margin-left: 0;
     transform: none;
@@ -830,7 +832,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 15px;
     width: 100%;
   }
 
@@ -849,8 +851,8 @@ footer {
   /* FLÈCHE (en bas) */
   .hero-arrow{
     position: static;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
     order: 2;
   }
