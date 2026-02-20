@@ -841,7 +841,7 @@ footer {
     width: 100%;
     text-align: center;     /* ✅ corrige le texte collé à gauche */
     margin: 0;
-    font-size: clamp(20px, 6vw, 28px);
+    font-size: clamp(17px, 5vw, 24px);
     line-height: 1.2;
     padding: 0 15px;
     
