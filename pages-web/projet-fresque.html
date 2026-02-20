@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Fresque</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Orkney&display=swap" rel="stylesheet" />
+  <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+</head>
+
+<body class="projet">
+  <div class="custom-cursor"></div>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.svg" alt="Logo" />
+      </a>
+    </div>
+    <nav>
+      <a href="#projets" id="projets-link">projets</a>
+      <a href="../pages-web/a-propos.html">à propos</a>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="project-text">
+      <h1 class="project-title"> Fresque avec l'Essor<br>de Castelmoron-sur-Lot </h1>
+      <p>
+        Cette fresque prolonge les réflexions développées 
+        dans mon mémoire, <a href="projet-au-plus-pres.html" class="inline-link">Au plus près, l’immersion comme    
+        protocole d’intervention.</a> Elle traduit graphiquement
+        une volonté : rendre visible une présence, créer du lien  
+        entre un lieu de vie et son environnement social, 
+        entre les habitants de Castelmoron, et les résidents 
+        de l'Essor.
+         
+      </p>
+      <p>
+        Pensée avec les résidents du foyer, la fresque s’appuie 
+        sur des modules inspirés de l’architecture locale.   
+        D'abord à échelle réduite, chaque participant a imaginé  
+        ou réinterprété un lieu réel ou fictif, à l'aide des modules. 
+        Un jeu formel simple, accessible, mais suffisamment
+        souple pour accueillir des récits. Sur 4 demi-journées,
+        nous sommes ensuite venus reproduire quelques
+        compositions à taille réelle, à la craie, sur un mur  
+        du village prêté par la mairie.
+        
+        
+      </p>
+      <p>
+        Ce projet a permis aux résidents de prendre part 
+        à un processus de création graphique collectif, visible 
+        dans l’espace public. La fresque devient ainsi un support 
+        d’expression, mais aussi un geste de médiation 
+        silencieux : elle invite à porter un autre regard 
+        sur le foyer, ses habitants, et les relations  
+        possibles entre dedans et dehors.
+        
+      </p>
+
+      <a href="../index.html#projets" class="back-link" aria-label="Retour">
+  <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.69 313.62" aria-hidden="true">
+    <path class="arrow-path d1" pathLength="100"
+      d="M227.7,164.95v-4.56c0-12.13-9.83-21.96-21.96-21.96s-21.96,9.83-21.96,21.96v4.56"/>
+    <path class="arrow-path d2" pathLength="100"
+      d="M139.84,164.95v4.56c0,12.13,9.83,21.96,21.96,21.96s21.96-9.83,21.96-21.96v-4.56"/>
+    <path class="arrow-path d3" pathLength="100"
+      d="M139.84,164.95v-4.56c0-12.13-9.83-21.96-21.96-21.96s-21.96,9.83-21.96,21.96v4.56"/>
+    <path class="arrow-path d4" pathLength="100"
+      d="M17.01,138.42h13c12.13,0,21.96,9.83,21.96,21.96v4.56"/>
+    <path class="arrow-path d5" pathLength="100"
+      d="M51.98,164.95v4.56c0,12.13,9.83,21.96,21.96,21.96s21.96-9.83,21.96-21.96v-4.56"/>
+    <path class="arrow-path d6" pathLength="100"
+      d="M32.15,150.43l-14.3-10.61c-1.13-.84-1.11-2.54.04-3.35l14.26-10.05"/>
+  </svg>
+</a>
+    </div>
+
+      <div class="project-images">
+        <img src="../img/fresque1.webp" alt="Image 1 du projet fresque" />
+        <img src="../img/fresque2.webp" alt="Image 2 du projet fresque" />
+        <img src="../img/fresque3.webp" alt="Image 3 du projet fresque" />
+        <img src="../img/fresque4.webp" alt="Image 4 du projet fresque" />
+        <img src="../img/fresque5.webp" alt="Image 5 du projet fresque" />
+        <img src="../img/fresque6.webp" alt="Image 6 du projet fresque" />
+        <img src="../img/fresque7.webp" alt="Image 7 du projet fresque" />
+        <img src="../img/fresque8.webp" alt="Image 8 du projet fresque" />
+        <img src="../img/fresque9.webp" alt="Image 9 du projet fresque" />
+        <img src="../img/fresque10.webp" alt="Image 10 du projet fresque" />
+        <img src="../img/fresquetypo1.webp" alt="Image 11 du projet fresque" />
+        <img src="../img/fresquetypo2.webp" alt="Image 12 du projet fresque" />
+
+        
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <script src="../script.js"></script>
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+  
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  
+    // Agrandit sur les éléments interactifs
+    const hoverables = document.querySelectorAll('a, button, [role="button"], input, textarea');
+  
+    hoverables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('cursor-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('cursor-hover');
+      });
+    });
+  </script>
+</body>
+</html>
