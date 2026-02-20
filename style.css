@@ -254,6 +254,10 @@ body.scrolled .hero-video {
 em{
   font-style: italic;
 }
+.hero-text em{
+  font-style: italic;
+  font-weight: 400;
+}
 
 /* ======================
    ARROW DRAW (comme avant)
@@ -459,13 +463,13 @@ em{
 @font-face {
   font-family: "redaction";
   src: url("fonts/Redaction10-Regular.otf") format("opentype");
-  font-weight: 0;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "redaction";
   src: url("fonts/Redaction10-Italic.otf") format("opentype");
-  font-weight: 0;
+  font-weight: 400;
   font-style: italic;
 }
 
