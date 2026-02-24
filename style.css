@@ -161,6 +161,7 @@ header nav a:hover {
 body.scrolled .hero-video {
   opacity: 0;
   pointer-events: none;
+  transform: translateY(-20px);
 }
 
 /* ✅ Layout : vidéo | flèche | texte */
@@ -170,9 +171,9 @@ body.scrolled .hero-video {
   grid-template-columns: max-content 1fr;
   column-gap: 50px;
   align-items: start;
-  transform: translateY(150px);
 
-  min-height: 140vh;     /* ✅ C’EST ÇA qui crée l’espace réel */
+  transform: none;
+  min-height: 0;
 }
 
 /* ✅ important : tous les enfants commencent "au top" */
@@ -288,7 +289,7 @@ em{
 .gallery-wrapper {
   display: flex;
   gap: 40px;
-  padding: 120px 40px 1500px;
+  padding: 120px 40px 120px;
   overflow-x: hidden;   /* évite le scroll horizontal */
   overflow-y: visible;  /* ✅ ne coupe plus le bas */
 }
@@ -370,12 +371,11 @@ em{
 .project:hover .title {
   opacity: 1;
 }
-
 .column-left,
 .column-right {
-  transform: translate3d(0,0,0);
-  will-change: transform;
-  transition: transform 0.1s linear;
+  transform: none;
+  will-change: auto;
+  transition: none;
 }
 
 /* ======================

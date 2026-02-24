@@ -75,22 +75,6 @@ const updateHeader = () => {
     });
   }
 
-  // ------------------------
-  // SCROLL PARALLAX COLONNES (comme avant)
-  // ------------------------
-  const onParallaxScroll = () => {
-    if (isMobile()) return;
-
-    const scrollY = window.scrollY;
-    const leftCol = document.querySelector(".column-left");
-    const rightCol = document.querySelector(".column-right");
-
-    if (leftCol && rightCol) {
-      leftCol.style.transform = `translateY(${scrollY * 0.2}px)`;
-      rightCol.style.transform = `translateY(${scrollY * 0.3}px)`;
-    }
-  };
-
 // ------------------------
 // HERO fade-out (descente) + réapparition en haut (sans saccade)
 // ------------------------
@@ -149,14 +133,11 @@ const updateHeader = () => {
   showIfTop();
 })();
 
-// ------------------------
 // Scroll listener unique
-// ------------------------
 window.addEventListener(
   "scroll",
   () => {
     updateHeader();
-    onParallaxScroll();
   },
   { passive: true }
 );
