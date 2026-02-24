@@ -494,7 +494,7 @@ body.projet {
   margin: 0;
   padding: 30px 40px 60px;
   align-items: flex-start;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px); /* 100px = ton padding-top de body.projet */
 }
 
 .project-images {
@@ -533,8 +533,7 @@ body.projet {
   flex: 1;
   max-width: 30%;
   padding: 0 30px;
-  position: sticky;
-  top: 0;
+  position: relative;
   height: fit-content;
   align-self: flex-start;
 
@@ -544,8 +543,15 @@ body.projet {
 
   font-family: "uncut";
   font-weight: 300;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: 20px; /* pour éviter que le texte touche la scrollbar */
 }
-
+.project-text,
+.project-images{
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
 .project-text p {
   line-height: 1.2;
   font-size: 15px;
