@@ -921,8 +921,8 @@ footer {
   }
 
   body.projet {
-    overflow: auto;
-    height: auto;
+    overflow: auto !important;
+    height: auto !important;
     padding-top: 60px;
   }
 
