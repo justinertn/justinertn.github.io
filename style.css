@@ -944,6 +944,11 @@ footer {
     overflow: visible;
     padding-right: 0;
   }
+  /* ✅ MOBILE : le texte ne doit pas scroller tout seul */
+body.projet .project-text{
+  overflow: visible !important;
+  max-height: none !important;
+}
 
   
 }
